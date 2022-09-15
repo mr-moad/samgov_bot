@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SamgovBot</class>
+ <widget class="QMainWindow" name="SamgovBot">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>781</width>
+    <height>580</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QLabel" name="bot_title_2">
+    <property name="geometry">
+     <rect>
+      <x>-40</x>
+      <y>10</y>
+      <width>880</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe Print</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Welcom to sam.gov bot</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QCalendarWidget" name="end_date">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>250</y>
+      <width>350</width>
+      <height>250</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="keyword__checkbox">
+    <property name="geometry">
+     <rect>
+      <x>397</x>
+      <y>70</y>
+      <width>751</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Search by keyword</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="date_filter">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>220</y>
+      <width>824</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>FIlter By Date</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="custom_naics">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>180</y>
+      <width>371</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">padding:5px</string>
+    </property>
+    <property name="placeholderText">
+     <string>Please enter a naics</string>
+    </property>
+   </widget>
+   <widget class="QCalendarWidget" name="start_date">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>250</y>
+      <width>350</width>
+      <height>250</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="filters__checkbox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>101</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Search By filters</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="keyword_input">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>100</y>
+      <width>371</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">padding:5px</string>
+    </property>
+    <property name="placeholderText">
+     <string>Please enter a keyword</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="notice_select">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>361</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">padding:5px</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Special Notice</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Sources Sought</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Presolicitation</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Intent to Bundle Requirements</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Solicitation</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Combined Synopsis/Solicitation</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Award Notice</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Justification</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Sale of Surplus Property</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="domain_select">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>361</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">padding:5px</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>All Domains</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Contract Opportunities</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Assistance Listings</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Entity Information</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Federal Hierarchy</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Wage Determinations</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="aside_select">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>180</y>
+      <width>361</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">padding:5px</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Total Small Business Set-Aside (FAR 19.5)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Partial Small Business Set-Aside (FAR 19.5)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>8(a) Set-Aside (FAR 19.8)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>8(a) Sole Source (FAR 19.8)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>New Item</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Historically Underutilized Business (HUBZone) Set-Aside (FAR 19.13)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Historically Underutilized Business (HUBZone) Sole Source (FAR 19.13)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Service-Disabled Veteran-Owned Small Business (SDVOSB) Set-Aside (FAR 19.14)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Service-Disabled Veteran-Owned Small Business (SDVOSB) Sole Source (FAR 19.14)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Women-Owned Small Business (WOSB) Program Set-Aside (FAR 19.15)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Women-Owned Small Business (WOSB) Program Sole Source (FAR 19.15)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Economically Disadvantaged WOSB (EDWOSB) Program Set-Aside (FAR 19.15)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Economically Disadvantaged WOSB (EDWOSB) Program Sole Source (FAR 19.15)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Local Area Set-Aside (FAR 26.2)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Indian Economic Enterprise (IEE) Set-Aside (specific to Department of Interior)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Indian Small Business Economic Enterprise (ISBEE) Set-Aside (specific to Department of Interior)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Buy Indian Set-Aside (specific to Department of Health and Human Services, Indian Health Services)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Veteran-Owned Small Business Set-Aside (specific to Department of Veterans Affairs)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Veteran-Owned Small Business Sole source (specific to Department of Veterans Affairs)</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QCheckBox" name="specify_naics">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>150</y>
+      <width>768</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>specify naics</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>510</y>
+      <width>351</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Start Date</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>510</y>
+      <width>351</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>End Date</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="start_btn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>540</y>
+      <width>761</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Start</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
